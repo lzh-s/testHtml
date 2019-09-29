@@ -8,12 +8,10 @@ class myUnitTest(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Chrome()
         self.driver.implicitly_wait(5)#隐形等待时间为5秒
-     #   self.url = "https://3g.163.com/touch/photo"
-        #self.r = isElementExist(css,self.url)
 
     def check_status(self,url):
         u"""页面状态"""
-        r = requests.get(url,verify=False)
+        r = requests.get(url,verify=False)#关闭证书验证
         if r.status_code == 200:
             print(r.status_code, "Success")
             return True
