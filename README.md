@@ -1,4 +1,4 @@
-基于HttpRunner的自动化测试
+基于HttpRunner的自动化测试脚本，需要配置的环境
 1.从本地文件读取所有URL地址
 2.自动检测对应URL返回的code码
 3.使用selenium框架定位并获取页面指定元素
